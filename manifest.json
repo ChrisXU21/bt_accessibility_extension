@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "E-Learning Accessibility Evaluator",
+    "version": "1.0",
+    "description": "Evaluates accessibility compliance on e-learning platforms.",
+    "permissions": ["activeTab", "scripting", "storage"],
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_title": "Accessibility Analyzer"
+    },
+    "options_ui": {
+      "page": "options.html",
+      "open_in_tab": true
+    },
+    "web_accessible_resources": [
+      {
+        "resources": ["axe.min.js", "page_script.js"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }
+  

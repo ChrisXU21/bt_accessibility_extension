@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+    {
+        "type": "firefox",
+        "request": "launch",
+        "reAttach": true,
+        "name": "E-Learning Accessibility Evaluator",
+        "addonPath": "${workspaceFolder}"
+    }
+    ]
+}
