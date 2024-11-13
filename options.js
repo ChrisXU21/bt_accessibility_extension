@@ -5,8 +5,8 @@ document.getElementById('save').addEventListener('click', () => {
     });
   });
   
-  document.addEventListener('DOMContentLoaded', () => {
-    chrome.storage.sync.get(['apiKey'], (result) => {
+  document.addEventListener('DOMContentLoaded', async () => {
+    await chrome.storage.sync.get(['apiKey'], (result) => {
       if (result.apiKey) {
         document.getElementById('apiKey').value = result.apiKey;
       }
